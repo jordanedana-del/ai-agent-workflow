@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)file:///C:/Users/jorda/.gemini/antigravity/scratch/ai-agent-workflow/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent Workflow — Content Creation &amp; Marketing</title>
+  <meta name="description" content="Interactive AI agent workflow diagram for content creation and marketing pipelines. Visualize each agent&#39;s role, decision points, and feedback loops.">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./AI Agent Workflow — Content Creation &amp; Marketing_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./AI Agent Workflow — Content Creation &amp; Marketing_files/style.css">
+</head>
+<body>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-badge">
+        <span class="badge-dot"></span>
+        AI Workflow Visualizer
+      </div>
+      <h1 class="header-title">Content Creation <span class="gradient-text">&amp; Marketing</span></h1>
+      <p class="header-subtitle">Multi-agent pipeline — from brief to published content with intelligent decision points &amp; feedback loops</p>
+      <div class="header-meta">
+        <span class="meta-chip"><span class="chip-dot chip-green"></span>6 Agents</span>
+        <span class="meta-chip"><span class="chip-dot chip-blue"></span>4 Decision Points</span>
+        <span class="meta-chip"><span class="chip-dot chip-purple"></span>3 Feedback Loops</span>
+        <span class="meta-chip"><span class="chip-dot chip-orange"></span>Real-time Flow</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legend -->
+  <div class="legend-bar">
+    <div class="legend-inner">
+      <span class="legend-label">Legend:</span>
+      <div class="legend-item"><span class="legend-swatch swatch-agent"></span>Agent Node</div>
+      <div class="legend-item"><span class="legend-swatch swatch-decision"></span>Decision</div>
+      <div class="legend-item"><span class="legend-swatch swatch-start"></span>Start/End</div>
+      <div class="legend-item"><span class="legend-swatch swatch-feedback"></span>Feedback Loop</div>
+      <div class="legend-item"><span class="legend-swatch swatch-output"></span>Output</div>
+    </div>
+  </div>
+
+  <!-- Main Flow Canvas -->
+  <main class="canvas-wrap" id="canvas-wrap">
+    <div class="canvas" id="flow-canvas">
+
+      <!-- ═══════════════════ START ═══════════════════ -->
+      <div class="node node-start" id="n-start" data-id="start">
+        <div class="node-icon">🚀</div>
+        <div class="node-label">Start: User Brief</div>
+        <div class="node-sub">Goal + Audience + Keywords</div>
+      </div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ AGENT 1: BRIEF PARSER ═══════════════════ -->
+      <div class="node node-agent agent-1" id="n-brief" data-id="brief">
+        <div class="node-header">
+          <div class="node-badge">Agent 1</div>
+          <div class="agent-status" id="status-brief"></div>
+        </div>
+        <div class="node-icon-wrap"><span class="node-emoji">📋</span></div>
+        <div class="node-name">Brief Parser</div>
+        <div class="node-role">Parses &amp; structures the input brief</div>
+        <div class="node-tasks">
+          <div class="task-item">✦ Extract topic, tone &amp; audience</div>
+          <div class="task-item">✦ Identify content type &amp; channel</div>
+          <div class="task-item">✦ Set quality criteria &amp; KPIs</div>
+        </div>
+        <div class="node-output">
+          <span class="output-label">OUTPUT</span>
+          <span class="output-value">Structured Brief JSON</span>
+        </div>
+      </div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ DECISION 1 ═══════════════════ -->
+      <div class="node node-decision" id="n-d1" data-id="d1">
+        <div class="decision-icon">⟡</div>
+        <div class="node-label">Brief Complete?</div>
+        <div class="decision-branches">
+          <span class="branch branch-yes">YES → Research</span>
+          <span class="branch branch-no">NO → Request Clarification</span>
+        </div>
+      </div>
+
+      <!-- Feedback loop line for clarification -->
+      <div class="feedback-loop-label fl-1">🔁 Loop: Clarification Request</div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ AGENT 2: RESEARCH ═══════════════════ -->
+      <div class="node node-agent agent-2" id="n-research" data-id="research">
+        <div class="node-header">
+          <div class="node-badge">Agent 2</div>
+          <div class="agent-status" id="status-research"></div>
+        </div>
+        <div class="node-icon-wrap"><span class="node-emoji">🔍</span></div>
+        <div class="node-name">Research Agent</div>
+        <div class="node-role">Gathers data, trends &amp; references</div>
+        <div class="node-tasks">
+          <div class="task-item">✦ Web search &amp; competitor analysis</div>
+          <div class="task-item">✦ Keyword research &amp; SEO gaps</div>
+          <div class="task-item">✦ Gather stats, quotes &amp; sources</div>
+          <div class="task-item">✦ Trend &amp; sentiment analysis</div>
+        </div>
+        <div class="node-output">
+          <span class="output-label">OUTPUT</span>
+          <span class="output-value">Research Report + Keywords</span>
+        </div>
+      </div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ AGENT 3: CONTENT STRATEGIST ═══════════════════ -->
+      <div class="node node-agent agent-3" id="n-strategy" data-id="strategy">
+        <div class="node-header">
+          <div class="node-badge">Agent 3</div>
+          <div class="agent-status" id="status-strategy"></div>
+        </div>
+        <div class="node-icon-wrap"><span class="node-emoji">🗂️</span></div>
+        <div class="node-name">Content Strategist</div>
+        <div class="node-role">Plans structure &amp; content strategy</div>
+        <div class="node-tasks">
+          <div class="task-item">✦ Create content outline &amp; structure</div>
+          <div class="task-item">✦ Define narrative arc &amp; hooks</div>
+          <div class="task-item">✦ Map SEO keywords to sections</div>
+          <div class="task-item">✦ Set word count &amp; format specs</div>
+        </div>
+        <div class="node-output">
+          <span class="output-label">OUTPUT</span>
+          <span class="output-value">Content Outline + Strategy Doc</span>
+        </div>
+      </div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ DECISION 2 ═══════════════════ -->
+      <div class="node node-decision" id="n-d2" data-id="d2">
+        <div class="decision-icon">⟡</div>
+        <div class="node-label">Strategy Approved?</div>
+        <div class="decision-branches">
+          <span class="branch branch-yes">YES → Writer</span>
+          <span class="branch branch-no">NO → Revise Strategy</span>
+        </div>
+      </div>
+
+      <div class="feedback-loop-label fl-2">🔁 Loop: Strategy Revision</div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ AGENT 4: WRITER ═══════════════════ -->
+      <div class="node node-agent agent-4" id="n-writer" data-id="writer">
+        <div class="node-header">
+          <div class="node-badge">Agent 4</div>
+          <div class="agent-status" id="status-writer"></div>
+        </div>
+        <div class="node-icon-wrap"><span class="node-emoji">✍️</span></div>
+        <div class="node-name">Writer Agent</div>
+        <div class="node-role">Generates the full content draft</div>
+        <div class="node-tasks">
+          <div class="task-item">✦ Write according to outline &amp; brief</div>
+          <div class="task-item">✦ Inject research facts &amp; stats</div>
+          <div class="task-item">✦ Maintain brand voice &amp; tone</div>
+          <div class="task-item">✦ Embed target keywords naturally</div>
+          <div class="task-item">✦ Create compelling CTA</div>
+        </div>
+        <div class="node-output">
+          <span class="output-label">OUTPUT</span>
+          <span class="output-value">Full Draft Content</span>
+        </div>
+      </div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ AGENT 5: EDITOR / QA ═══════════════════ -->
+      <div class="node node-agent agent-5" id="n-editor" data-id="editor">
+        <div class="node-header">
+          <div class="node-badge">Agent 5</div>
+          <div class="agent-status" id="status-editor"></div>
+        </div>
+        <div class="node-icon-wrap"><span class="node-emoji">🔬</span></div>
+        <div class="node-name">Editor / QA Agent</div>
+        <div class="node-role">Reviews, scores &amp; refines the draft</div>
+        <div class="node-tasks">
+          <div class="task-item">✦ Grammar, style &amp; clarity check</div>
+          <div class="task-item">✦ Fact-check against research</div>
+          <div class="task-item">✦ SEO score &amp; readability audit</div>
+          <div class="task-item">✦ Brand voice compliance check</div>
+          <div class="task-item">✦ Plagiarism &amp; AI-detection scan</div>
+        </div>
+        <div class="node-output">
+          <span class="output-label">OUTPUT</span>
+          <span class="output-value">Quality Score + Revision Notes</span>
+        </div>
+      </div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ DECISION 3 ═══════════════════ -->
+      <div class="node node-decision" id="n-d3" data-id="d3">
+        <div class="decision-icon">⟡</div>
+        <div class="node-label">Quality Score ≥ 85?</div>
+        <div class="decision-branches">
+          <span class="branch branch-yes">YES → Publisher</span>
+          <span class="branch branch-no">NO → Return to Writer</span>
+        </div>
+      </div>
+
+      <div class="feedback-loop-label fl-3">🔁 Loop: Revision Cycle (max 3x)</div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ AGENT 6: PUBLISHER ═══════════════════ -->
+      <div class="node node-agent agent-6" id="n-publisher" data-id="publisher">
+        <div class="node-header">
+          <div class="node-badge">Agent 6</div>
+          <div class="agent-status" id="status-publisher"></div>
+        </div>
+        <div class="node-icon-wrap"><span class="node-emoji">📡</span></div>
+        <div class="node-name">Publisher Agent</div>
+        <div class="node-role">Formats &amp; distributes the content</div>
+        <div class="node-tasks">
+          <div class="task-item">✦ Format for target channel (blog/social/email)</div>
+          <div class="task-item">✦ Generate meta title &amp; description</div>
+          <div class="task-item">✦ Schedule or publish to platform</div>
+          <div class="task-item">✦ Create social media snippets</div>
+          <div class="task-item">✦ Send performance tracking links</div>
+        </div>
+        <div class="node-output">
+          <span class="output-label">OUTPUT</span>
+          <span class="output-value">Published Content + Analytics Setup</span>
+        </div>
+      </div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ DECISION 4 ═══════════════════ -->
+      <div class="node node-decision" id="n-d4" data-id="d4">
+        <div class="decision-icon">⟡</div>
+        <div class="node-label">Performance Target Met?</div>
+        <div class="decision-branches">
+          <span class="branch branch-yes">YES → Archive &amp; End</span>
+          <span class="branch branch-no">NO → Re-optimize &amp; Republish</span>
+        </div>
+      </div>
+
+      <div class="connector conn-down"><div class="conn-line"></div><div class="conn-arrow">↓</div></div>
+
+      <!-- ═══════════════════ END ═══════════════════ -->
+      <div class="node node-end" id="n-end" data-id="end">
+        <div class="node-icon">🏁</div>
+        <div class="node-label">Done: Content Live &amp; Tracked</div>
+        <div class="node-sub">Analytics dashboard updated • Brief archived</div>
+      </div>
+
+    </div>
+
+    <!-- Side Panel -->
+    <div class="side-panel" id="side-panel">
+      <div class="panel-header">
+        <span class="panel-title" id="panel-title" style="color: rgb(124, 58, 237);">📋 Agent 1 — Brief Parser</span>
+        <button class="panel-close" id="panel-close" aria-label="Close panel">✕</button>
+      </div>
+      <div class="panel-body" id="panel-body"><div class="panel-section">
+    <div class="panel-section-title">Description</div>
+    <p class="panel-hint" style="color: var(--text-dim)">The Brief Parser agent reads the raw user input and converts it into a structured JSON object. It validates completeness and flags missing fields before passing to downstream agents.</p>
+  </div><div class="panel-section">
+      <div class="panel-stat" style="border-bottom: none; padding: 0">
+        <span class="panel-stat-label">Node Type</span>
+        <span class="panel-stat-value" style="color:#7c3aed">Agent</span>
+      </div>
+    </div><div class="panel-section">
+      <div class="panel-section-title">Statistics</div><div class="panel-stat">
+        <span class="panel-stat-label">Model</span>
+        <span class="panel-stat-value">GPT-4o / Claude 3.5</span>
+      </div><div class="panel-stat">
+        <span class="panel-stat-label">Avg. Time</span>
+        <span class="panel-stat-value">5–15 sec</span>
+      </div><div class="panel-stat">
+        <span class="panel-stat-label">Tool Use</span>
+        <span class="panel-stat-value">Schema Validator</span>
+      </div><div class="panel-stat">
+        <span class="panel-stat-label">Memory</span>
+        <span class="panel-stat-value">Short-term only</span>
+      </div></div><div class="panel-section">
+      <div class="panel-section-title">Inputs</div>
+      <div class="panel-list"><div class="panel-list-item">↳ Raw user brief text</div><div class="panel-list-item">↳ Template requirements</div><div class="panel-list-item">↳ Historical brief patterns</div></div></div><div class="panel-section">
+      <div class="panel-section-title">Outputs</div>
+      <div class="panel-list"><div class="panel-list-item" style="border-color:rgba(56,189,248,0.2);background:rgba(56,189,248,0.05)">⇒ Structured Brief JSON</div><div class="panel-list-item" style="border-color:rgba(56,189,248,0.2);background:rgba(56,189,248,0.05)">⇒ Validation report</div><div class="panel-list-item" style="border-color:rgba(56,189,248,0.2);background:rgba(56,189,248,0.05)">⇒ Missing field flags</div></div></div><div class="panel-section">
+      <div class="panel-section-title">Tags</div>
+      <div class="panel-tag-row"><span class="panel-tag">NLP</span><span class="panel-tag">JSON Schema</span><span class="panel-tag">Validation</span><span class="panel-tag">Parsing</span></div></div><div class="panel-section">
+      <div class="panel-section-title">Implementation Notes</div>
+      <p class="panel-hint" style="color:var(--text-dim);font-size:13px;background:rgba(255,255,255,0.03);padding:12px;border-radius:8px;border:1px solid var(--border)">Uses a structured output mode to guarantee JSON conformance. Falls back to clarification request if confidence &lt; 80%.</p>
+    </div></div>
+    </div>
+  </main>
+
+  <!-- Simulation Bar -->
+  <div class="sim-bar">
+    <div class="sim-inner">
+      <span class="sim-label">Workflow Simulation</span>
+      <button class="sim-btn" id="btn-run">▶ Run Simulation</button>
+      <button class="sim-btn sim-btn-secondary" id="btn-reset">↺ Reset</button>
+      <div class="sim-progress">
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-fill" style="width: 0%;"></div>
+        </div>
+        <span class="progress-text" id="progress-text">0 / 6 agents</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./AI Agent Workflow — Content Creation &amp; Marketing_files/script.js"></script>
+
+
+</body></html>
