@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jordanedana-del.github.io/ai-agent-workflow/sitemap.xml
